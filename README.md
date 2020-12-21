@@ -1,4 +1,16 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Grid test task
+
+Tech stack: HTML5, SASS, JS (grid layout switching), BEM methodology.
+
+Fully responsive layout was made by using CSS Flexbox (mobiles, tablets, laptops, high screens).
+
+Click the link to see DEMO.
+
+Design of landing page you could find here
+
+Large screen 2560px
+Full HD 1920px
+The design 1600px
+Notebook 1280px
+Tablet 1024px
+Mobile (> 320px)
