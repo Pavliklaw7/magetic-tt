@@ -1,0 +1,41 @@
+.section {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+    &-item {
+      @media (max-width: 690px) {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1rem;
+
+    @media (max-width: 690px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__options {
+    &-label {
+      margin-right: 20px;
+      cursor: pointer;
+
+      @media (max-width: 690px) {
+        margin-right: 5px;
+      }
+    }
+
+    &-item {
+      display: none;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}

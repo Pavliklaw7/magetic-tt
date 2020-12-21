@@ -5,9 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header"> <!-- header start -->
+      <div class="header__input-container">
+        <i class="fas fa-search"></i>
+        <input type="text" class="header__input">
+      </div>
+      <div class="header__actions">
+        <div class="header__actions-item">
+          <i class="fas fa-comment"></i>
+        </div>
+        <div class="header__actions-item">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="header__actions-item">
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </div>
+    </header> <!-- header end -->
+    <sidebar class="sidebar"> <!-- sidebar start -->
+      <a class="sidebar__icon" href="grid.html">
+        <i class="fas fa-th"></i>
+      </a>
+      <nav class="nav sidebar__nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"></li>
+          <li class="nav__list-item"></li>
+          <li class="nav__list-item"></li>
+          <li class="nav__list-item"></li>
+          <li class="nav__list-item"></li>
+          <li class="nav__list-item"></li>
+        </ul>
+      </nav>
+    </sidebar> <!-- sidebar end -->
+    <main class="main"> <!-- main start -->
+      <section class="main__block main__block--empty"></section>
+      <section class="section main__block"> <!-- activity start -->
+        <div class="section__header">
+          <h4 class="section__title">Activity</h4>
+          <span class="section__header-item">All updates</span>
+        </div>
+      </section> <!-- activity end -->
+      <section class="section main__block"> <!-- vehicles start -->
+        <div class="section__header">
+          <h4 class="section__title">Vehicles</h4>
+          <div class="section__options">
+            <label for="list" class="section__options-label">
+              <i class="fas fa-list"></i>
+              <input
+                id="list"
+                name="list"
+                type="radio"
+                class="section__options-item"
+              >
+            </label>
+            <label for="map" class="section__options-label">
+              <i class="fas fa-map"></i>
+              <input
+                id="map"
+                name="map"
+                type="radio"
+                class="section__options-item"
+              >
+            </label>
+          </div>
+        </div>
+      </section> <!-- vehicles end -->
+    </main> <!-- main end -->
   </body>
 </html>

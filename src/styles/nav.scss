@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgrey;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

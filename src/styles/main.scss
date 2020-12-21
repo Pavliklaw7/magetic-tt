@@ -1,7 +1,69 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "sidebar";
+@import "nav";
+@import "section";
+@import "grid";
 
 body {
-  background: $c-gray;
+  background-color: #f0f1f0 !important;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  margin-left: 7rem;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: 1.5fr 2fr;
+  }
+
+  @media (max-width: 690px) {
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    margin-left: 6rem;
+  }
+
+  @media (max-width: 490px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr 2fr;
+  }
+
+  &__block {
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 1rem;
+
+    @media (max-width: 690px) {
+      height: 80vh;
+    }
+  }
+
+  &__block--empty {
+    grid-column: span 2;
+    height: 1.5rem;
+    width: 30%;
+
+    @media (max-width: 490px) {
+      grid-column: auto;
+    }
+  }
 }
